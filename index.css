@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #222;
+}
+body {
+  min-width: 1200px;
+  background-color: #f8f8f8;
+  color: #222;
+  font-family: sans-serif;
+}
+.inner {
+  width: 1200px;
+  margin: 0 auto;
+  /* border: 1px solid red; */
+}
+.inner_head {
+  padding: 20px 0 0;
+}
+/* #header  css 부분*/
+#header,
+.menu_tab {
+  background-color: #fff;
+  font-size: 16px;
+}
+#header {
+  height: 100px;
+}
+#header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .inner .leftMenu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* border: 1px solid blue; */
+}
+#header .inner .leftMenu .logo {
+  /* width: 500px; */
+  margin-right: 40px;
+}
+#header .inner .search {
+  width: 450px;
+  /* border: 1px solid blue; */
+  position: relative;
+}
+#header .inner .search input[type='text'] {
+  height: 50px;
+  width: 100%;
+  border-radius: 25px; /* 높이 50px의 절반값으로 설정 시 완벽한 둥근 모양 */
+  border: 1px solid #ccc; /* 테두리 색상 명시 (기본 테두리 제거 효과) */
+  outline: none; /* 클릭(포커스) 시 나오는 파란색/검은색 기본 외곽선 제거 */
+  padding-left: 20px; /* 왼쪽 텍스트 여백 */
+  padding-right: 50px; /* 오른쪽 아이콘과 텍스트가 겹치지 않게 여백 추가 */
+  font-size: 15px; /* 글자 크기 살짝 조정 */
+}
+#header .inner .leftMenu .logo,
+#footer .inner .company .logo {
+  font-weight: bold;
+  font-size: 32px;
+  font-family: 'Arial Rounded MT Bold', 'Quicksand';
+}
+#header .inner .search img {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  right: 20px;
+  top: 15px;
+}
+#header .inner .rightMenu ul {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+#header .inner .rightMenu ul li a {
+  font-size: 14px;
+}
+
+/* 메뉴 탭 NAV CSS 부분 */
+.menu_tab {
+  /* height: 30px; */
+  border-bottom: 1px solid #e4e5ed;
+}
+.menu_tab .inner_nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.menu_tab .inner .left_menu {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu_tab .inner .right_menu {
+  display: flex;
+  width: 25%;
+  justify-content: space-between;
+  align-items: center;
+}
+/* footer css 부분 */
+#footer {
+  background-color: #2e303b;
+  color: #d1d5db;
+  font-size: 12px;
+  padding: 30px 0 40px;
+}
+#footer .address p {
+  padding-bottom: 5px;
+}
+#footer .address .copyright {
+  padding-top: 20px;
+  letter-spacing: 1px;
+}
+#footer .inner .company {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  height: 70px;
+}
+#footer .play {
+  display: flex;
+  gap: 10px; /* 두 버튼 사이의 간격 */
+  align-items: center;
+}
+
+#footer .play a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff; /* 흰색 배경 */
+  border: 1px solid #e2e8f0; /* 연한 테두리 */
+  border-radius: 20px; /* 알약 모양 둥근 테두리 */
+  padding: 6px 16px; /* 버튼 내부 여백 (위아래, 좌우) */
+}
+
+/* 마우스 호버 효과 (선택사항) */
+#footer .play a:hover {
+  background-color: #f8fafc;
+}
+
+/* 이미지 크기 조절 */
+#footer .play a img {
+  height: 18px; /* 이미지 높이 정돈 */
+  width: 70px;
+  display: block;
+}
+
+/* section css 부분 */
+#section {
+  width: 1200px;
+  /* border: 1px solid red; */
+  margin: 50px auto;
+}
+#section h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+#section form {
+  width: 400px;
+  /* border-radius: 10px; */
+  /* border: 1px solid lightslategray; */
+  margin: 0 auto;
+}
+#section form input[type='email'],
+#section form input[type='password'] {
+  width: 400px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding-left: 20px;
+  padding-right: 50px;
+  font-size: 15px;
+}
+#section form .join label {
+  font-weight: bold;
+  font-size: 15px;
+  display: block;
+  padding: 5px;
+}
+#section form ul li {
+  margin-bottom: 10px;
+}
+#section form .agree {
+  /* border-radius: 10px; */
+  border: 1px solid lightslategray;
+  background-color: #faf9fa;
+  padding: 20px;
+}
+#section form .agree input[type='checkbox'] {
+  width: 15px;
+  height: 15px;
+  line-height: 15px;
+  margin-right: 10px;
+}
+#section form .agree .agreeAll {
+  font-weight: bold;
+}
+#section form .agree hr {
+  margin: 20px 0;
+}
+#section form .agree p {
+  font-size: 13px;
+}
+#section form .agree ul {
+  margin: 10px 0;
+}
+#section form .submit_btn {
+  background-color: #212224;
+  color: #fff;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+}
+#section form .sns_join {
+  width: 100%;
+  margin: 20px 0;
+  /* border: 1px solid lightslategray; */
+}
+#section form .sns_join h4 {
+  margin-bottom: 15px;
+}
+#section form .sns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#section form .sns_join .sns li a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+}
+#section form .sns_join .sns li a img {
+  width: 40px;
+  height: 40px;
+}
+#section form .sns_join .sns .facebook {
+  background-color: #1877f2;
+}
+#section form .sns_join .sns .google {
+  border: 1px solid lightgray;
+  /* background-color: #1877f2; */
+}
+#section form .sns_join .sns .apple {
+  background-color: #000000;
+}
+
+.menu_tab a {
+  text-decoration: none;
+  color: #222;
+  padding-bottom: 12px;
+  border-bottom: 4px solid transparent; /* 기본은 투명 */
+  transition: border-color 0.2s;
+}
+/* JS가 이 클래스를 붙여줍니다 */
+.menu_tab a.active {
+  border-bottom-color: #222; /* 호버 시 나타날 두꺼운 줄 */
+}
